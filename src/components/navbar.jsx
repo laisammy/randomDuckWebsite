@@ -1,6 +1,6 @@
 export default function Navbar() {
     return(
-        <nav className="bg-linear-to-b from-amber-300 to-amber-200 h-full flex flex-row justify-center gap-100">
+        <nav className="bg-linear-to-b from-amber-300 to-amber-200 h-full flex flex-row justify-center gap-80">
             <div className="flex flex-row items-center">
                 <img src="/duckiverseLogo.png" className="w-17 h-auto"></img>
                 <div className="text-stone-800 text-3xl font-climate m-4">
@@ -18,6 +18,10 @@ export default function Navbar() {
 
                 <a href="/gallery" className="hover:text-stone-900">
                     Gallery
+                </a>
+
+                <a href="/soundboard" className="hover:text-stone-900">
+                    Soundboard
                 </a>
             </div>
         </nav>
