@@ -1,6 +1,15 @@
+import { useState } from "react";
+
 import Navbar from "./navbar"
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 export default function Duckpedia() {
+    const [open, setOpen] = useState(true)
     return(
         <div>
             <Navbar />
@@ -91,6 +100,86 @@ export default function Duckpedia() {
                                 They're also culturally iconic, often appearing in folklore, art, and even internet memes, bringing joy to people of all ages.
                             </div>
                         </div>
+                    </div>
+                    <div className="font-lexend font-bold text-3xl text-stone-800">
+                        Common Duck Species
+                    </div>
+                    <div className="mb-8 ml-8 mr-8">
+                        <Accordion>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <span className="font-lexend font-semibold">Mallard (Anas platyrhynchos)</span>
+                            </AccordionSummary>
+                            <AccordionDetails className="font-lexend flex flex-col">
+                                <img src="src/assets/1200.jpg" className="w-1/4 m-2"></img>
+                                <span>
+                                    The mallard is the most widespread and familiar duck species in the world. 
+                                    They're the classic “duck shape” people imagine, and many domestic ducks descend from them.
+                                </span>
+                                <span className="mt-2">
+                                    <b>Fun fact:</b> Mallards hybridise easily with other duck species, creating unique colour variations.
+                                </span>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <span className="font-lexend font-semibold">Mandarin Duck (Aix galericulata)</span>
+                            </AccordionSummary>
+                            <AccordionDetails className="font-lexend flex flex-col">
+                                <img src="src/assets/wildlifetrusts_42318949324.jpg" className="w-1/4 m-2"></img>
+                                <span>
+                                    One of the most strikingly beautiful ducks, often called the “most colourful duck in the world.”
+                                </span>
+                                <span className="mt-2">
+                                    <b>Fun fact:</b> Mandarin ducks are symbols of love and fidelity in Chinese and Korean culture.
+                                </span>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <span className="font-lexend font-semibold">Muscovy Duck (Cairina moschata)</span>
+                            </AccordionSummary>
+                            <AccordionDetails className="font-lexend flex flex-col">
+                                <img src="src/assets/muscovyDuck.jpg" className="w-1/4 m-2"></img>
+                                <span>
+                                    A large, distinctive duck often seen on farms or in warm climates.
+                                </span>
+                                <span className="mt-2">
+                                    <b>Fun fact:</b> Muscovies are technically not “true ducks”, they actually belong to a different branch of the duck family.
+                                </span>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <span className="font-lexend font-semibold">Northern Pintail (Anas acuta)</span>
+                            </AccordionSummary>
+                            <AccordionDetails className="font-lexend flex flex-col">
+                                <img src="src/assets/75227621-1200px.jpg" className="w-1/4 m-2"></img>
+                                <span>
+                                    A sleek, elegant duck known for its long neck and pointed tail.
+                                </span>
+                                <span className="mt-2">
+                                    <b>Fun fact:</b> Pintails are among the earliest ducks to migrate each year.
+                                </span>
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <span className="font-lexend font-semibold">American Black Duck (Anas rubripes)</span>
+                            </AccordionSummary>
+                            <AccordionDetails className="font-lexend flex flex-col">
+                                <img src="src/assets/301259931-480px.jpg" className="w-1/4 m-2"></img>
+                                <span>
+                                    A close relative of the mallard, but darker and more secretive.
+                                </span>
+                                <span className="mt-2">
+                                    <b>Fun fact:</b> They were once extremely common but declined due to habitat loss and hybridisation.
+                                </span>
+                            </AccordionDetails>
+                        </Accordion>
                     </div>
                 </div>
             </div>
