@@ -19,7 +19,7 @@ export default function Viewer() {
 
     return (
         <div className="flex flex-col items-center mt-16">
-            <div className="font-climate text-2xl text-stone-800 m-3">
+            <div className="font-climate text-2xl text-stone-800 m-3 mb-10">
                 Fetch a duck!
             </div>
             <div className="bg-white shadow-lg rounded-xl p-6 w-[450px] h-[450px] flex items-center justify-center">

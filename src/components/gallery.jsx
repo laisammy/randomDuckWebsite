@@ -21,6 +21,9 @@ const photos = [
     { src: "src/assets/527.jpg"},
     { src: "src/assets/529.jpg"},
     { src: "src/assets/548.jpg"},
+    { src: "src/assets/120.jpg"},
+    { src: "src/assets/200.jpg"},
+    { src: "src/assets/410.jpg"},
 ];
 
 export default function Gallery() {

@@ -23,7 +23,7 @@ export default function Facts() {
 
     return(
         <div className="flex flex-col items-center mt-16">
-            <div className="font-climate text-2xl text-stone-800 m-3">
+            <div className="font-climate text-2xl text-stone-800 m-3 mb-10">
                 A random duck fact!
             </div>
             <div className="bg-white shadow-lg rounded-xl p-6 w-[450px] min-h-[150px] flex items-center justify-center text-center">

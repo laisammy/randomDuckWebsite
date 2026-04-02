@@ -15,6 +15,10 @@ export default function Navbar() {
                 <a href="/gallery" className="hover:text-stone-900">
                     Gallery
                 </a>
+
+                <a href="/duckpedia" className="hover:text-stone-900">
+                    Duckpedia
+                </a>
             </div>
         </nav>
     )
