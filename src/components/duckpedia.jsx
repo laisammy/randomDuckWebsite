@@ -115,6 +115,9 @@ export default function Duckpedia() {
                                     The mallard is the most widespread and familiar duck species in the world. 
                                     They're the classic “duck shape” people imagine, and many domestic ducks descend from them.
                                 </span>
+                                <span>
+                                    They are known for their loud quacks and being highly social!
+                                </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> Mallards hybridise easily with other duck species, creating unique colour variations.
                                 </span>
@@ -128,7 +131,10 @@ export default function Duckpedia() {
                             <AccordionDetails className="font-lexend flex flex-col">
                                 <img src="src/assets/wildlifetrusts_42318949324.jpg" className="w-1/4 m-2"></img>
                                 <span>
-                                    One of the most strikingly beautiful ducks, often called the “most colourful duck in the world.”
+                                    One of the most strikingly beautiful ducks, often called the "most colourful duck in the world."
+                                </span>
+                                <span>
+                                    They are very shy in the wild but calm in parks.
                                 </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> Mandarin ducks are symbols of love and fidelity in Chinese and Korean culture.
@@ -145,6 +151,9 @@ export default function Duckpedia() {
                                 <span>
                                     A large, distinctive duck often seen on farms or in warm climates.
                                 </span>
+                                <span>
+                                    They are calm, gentle and often friendly. They are also strong flyers despite their small size!
+                                </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> Muscovies are technically not “true ducks”, they actually belong to a different branch of the duck family.
                                 </span>
@@ -160,6 +169,9 @@ export default function Duckpedia() {
                                 <span>
                                     A sleek, elegant duck known for its long neck and pointed tail.
                                 </span>
+                                <span>
+                                    They are strong and fast flyers. They often migrate, travelling long distances.
+                                </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> Pintails are among the earliest ducks to migrate each year.
                                 </span>
@@ -174,6 +186,9 @@ export default function Duckpedia() {
                                 <img src="src/assets/301259931-480px.jpg" className="w-1/4 m-2"></img>
                                 <span>
                                     A close relative of the mallard, but darker and more secretive.
+                                </span>
+                                <span>
+                                    They are shy and wary compared to their close counterpart, the mallard.
                                 </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> They were once extremely common but declined due to habitat loss and hybridisation.
