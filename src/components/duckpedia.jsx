@@ -1,31 +1,44 @@
 import { useState } from "react";
+import Navbar from "./navbar";
 
-import Navbar from "./navbar"
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import img303 from "../assets/303.jpg";
+import img529 from "../assets/529.jpg";
+import img410 from "../assets/410.jpg";
+
+import mallardImg from "../assets/1200.jpg";
+import mandarinImg from "../assets/wildlifetrusts_42318949324.jpg";
+import muscovyImg from "../assets/muscovyDuck.jpg";
+import pintailImg from "../assets/75227621-1200px.jpg";
+import blackDuckImg from "../assets/301259931-480px.jpg";
 
 export default function Duckpedia() {
-    const [open, setOpen] = useState(true)
-    return(
+    const [open, setOpen] = useState(true);
+
+    return (
         <div>
             <Navbar />
+
             <div className="bg-linear-to-b from-amber-200 to-stone-200">
                 <div className="text-stone-800 flex flex-col justify-center items-center gap-3">
+
                     <div className="font-climate text-3xl text-stone-800 mt-15 mb-8">
                         Learn more about ducks!
                     </div>
+
                     <div className="flex flex-row items-center justify-center gap-3">
-                        <img src="src/assets/303.jpg" className="w-1/4 h-1/4"></img> 
-                        <img src="src/assets/529.jpg" className="w-1/4 h-1/4"></img>
-                        <img src="src/assets/410.jpg" className="w-1/4 h-1/4"></img>
+                        <img src={img303} className="w-1/4 h-1/4" />
+                        <img src={img529} className="w-1/4 h-1/4" />
+                        <img src={img410} className="w-1/4 h-1/4" />
                     </div>
+
                     <div className="font-lexend m-8 ml-25 mr-25 text-center">
                         Ducks are one of the most beloved waterbirds around the world. They are known for their cheerful waddles, expressive quacks and remarkable adaptability. 
-                        They belong to the bird family Anatidae, which also includes geese and swans. Ducks can be found on every continent except Antartica, thriving in environments ranging from quiet village ponds to vast wetlands and bustling city parks!
+                        They belong to the bird family Anatidae, which also includes geese and swans. Ducks can be found on every continent except Antarctica, thriving in environments ranging from quiet village ponds to vast wetlands and bustling city parks!
                     </div>
 
                     <div className="flex flex-row justify-center items-center text-center mt-8 ml-8 mr-8 gap-3">
@@ -43,7 +56,7 @@ export default function Duckpedia() {
                                     <li>&#8226; Rice fields and agricultural wetlands</li>
                                 </ol>
                                 Many species migrate seasonally, travelling thousands of miles between breeding and wintering grounds. 
-                                While others stay in the same area year-round, especially in places where food and open water remain available.
+                                Others stay in the same area year-round, especially where food and open water remain available.
                             </div>
                         </div>
 
@@ -52,7 +65,7 @@ export default function Duckpedia() {
                                 What Ducks Eat
                             </div>
                             <div className="font-lexend text-center">
-                                Ducks are opportunistic feeders, this means that they adapt their diets to consume whatever food is readily available, rather than relying on a single, specific food source. Common foods include:
+                                Ducks are opportunistic feeders, adapting their diets to whatever food is available. Common foods include:
                                 <ol className="m-2">
                                     <li>&#8226; Aquatic plants and algae</li>
                                     <li>&#8226; Seeds and grains</li>
@@ -60,7 +73,7 @@ export default function Duckpedia() {
                                     <li>&#8226; Snails, crustaceans, and tiny fish</li>
                                     <li>&#8226; Grass and leafy vegetation</li>
                                 </ol>
-                                Dabbling ducks (like mallards) feed at the water's surface, often tipping forward with their tails in the air. 
+                                Dabbling ducks feed at the surface, often tipping forward with their tails in the air. 
                                 Diving ducks plunge beneath the water to forage deeper down.
                             </div>
                         </div>
@@ -72,15 +85,15 @@ export default function Duckpedia() {
                                 What Ducks Do
                             </div>
                             <div className="font-lexend text-center">
-                                Ducks are a social bunch, they lead surprisingly busy and social lives. Some of their everyday activities include:
+                                Ducks lead surprisingly busy and social lives. Some of their everyday activities include:
                                 <ol className="m-2">
-                                    <li>&#8226; <b>Swimming and foraging</b> for food throughout the day</li>
-                                    <li>&#8226; <b>Preening</b> to keep their feathers waterproof and healthy</li>
-                                    <li>&#8226; <b>Waddling on land</b> in search of grass or nesting spot</li>
+                                    <li>&#8226; <b>Swimming and foraging</b> for food</li>
+                                    <li>&#8226; <b>Preening</b> to keep feathers waterproof</li>
+                                    <li>&#8226; <b>Waddling on land</b> in search of grass or nesting spots</li>
                                     <li>&#8226; <b>Quacking, whistling, or grunting</b> to communicate</li>
-                                    <li>&#8226; <b>Raising ducklings</b>, who imprint on their mother and follow her everywhere</li>
+                                    <li>&#8226; <b>Raising ducklings</b>, who imprint on their mother</li>
                                 </ol>
-                                Many species are highly social and gather in flocks, especially outside the breeding season.
+                                Many species gather in flocks, especially outside the breeding season.
                             </div>
                         </div>
 
@@ -97,29 +110,31 @@ export default function Duckpedia() {
                                     <li>&#8226; Providing food for predators</li>
                                     <li>&#8226; Helping maintain biodiversity</li>
                                 </ol>
-                                They're also culturally iconic, often appearing in folklore, art, and even internet memes, bringing joy to people of all ages.
+                                They're also culturally iconic and bring joy to people of all ages.
                             </div>
                         </div>
                     </div>
+
                     <div className="font-lexend font-bold text-3xl text-stone-800">
                         Common Duck Species
                     </div>
+
                     <div className="mb-8 ml-8 mr-8">
+
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                 <span className="font-lexend font-semibold">Mallard (Anas platyrhynchos)</span>
                             </AccordionSummary>
                             <AccordionDetails className="font-lexend flex flex-col">
-                                <img src="src/assets/1200.jpg" className="w-1/4 m-2"></img>
+                                <img src={mallardImg} className="w-1/4 m-2" />
                                 <span>
-                                    The mallard is the most widespread and familiar duck species in the world. 
-                                    They're the classic “duck shape” people imagine, and many domestic ducks descend from them.
+                                    The mallard is the most widespread and familiar duck species in the world.
                                 </span>
                                 <span>
-                                    They are known for their loud quacks and being highly social!
+                                    They are known for their loud quacks and highly social behaviour.
                                 </span>
                                 <span className="mt-2">
-                                    <b>Fun fact:</b> Mallards hybridise easily with other duck species, creating unique colour variations.
+                                    <b>Fun fact:</b> Mallards hybridise easily with other duck species.
                                 </span>
                             </AccordionDetails>
                         </Accordion>
@@ -129,15 +144,15 @@ export default function Duckpedia() {
                                 <span className="font-lexend font-semibold">Mandarin Duck (Aix galericulata)</span>
                             </AccordionSummary>
                             <AccordionDetails className="font-lexend flex flex-col">
-                                <img src="src/assets/wildlifetrusts_42318949324.jpg" className="w-1/4 m-2"></img>
+                                <img src={mandarinImg} className="w-1/4 m-2" />
                                 <span>
-                                    One of the most strikingly beautiful ducks, often called the "most colourful duck in the world."
+                                    One of the most strikingly beautiful ducks, often called the “most colourful duck in the world.”
                                 </span>
                                 <span>
-                                    They are very shy in the wild but calm in parks.
+                                    They are shy in the wild but calm in parks.
                                 </span>
                                 <span className="mt-2">
-                                    <b>Fun fact:</b> Mandarin ducks are symbols of love and fidelity in Chinese and Korean culture.
+                                    <b>Fun fact:</b> Mandarin ducks symbolise love and fidelity in East Asian cultures.
                                 </span>
                             </AccordionDetails>
                         </Accordion>
@@ -147,15 +162,15 @@ export default function Duckpedia() {
                                 <span className="font-lexend font-semibold">Muscovy Duck (Cairina moschata)</span>
                             </AccordionSummary>
                             <AccordionDetails className="font-lexend flex flex-col">
-                                <img src="src/assets/muscovyDuck.jpg" className="w-1/4 m-2"></img>
+                                <img src={muscovyImg} className="w-1/4 m-2" />
                                 <span>
                                     A large, distinctive duck often seen on farms or in warm climates.
                                 </span>
                                 <span>
-                                    They are calm, gentle and often friendly. They are also strong flyers despite their small size!
+                                    They are calm, gentle, and surprisingly strong flyers.
                                 </span>
                                 <span className="mt-2">
-                                    <b>Fun fact:</b> Muscovies are technically not “true ducks”, they actually belong to a different branch of the duck family.
+                                    <b>Fun fact:</b> Muscovies are technically not “true ducks.”
                                 </span>
                             </AccordionDetails>
                         </Accordion>
@@ -165,12 +180,12 @@ export default function Duckpedia() {
                                 <span className="font-lexend font-semibold">Northern Pintail (Anas acuta)</span>
                             </AccordionSummary>
                             <AccordionDetails className="font-lexend flex flex-col">
-                                <img src="src/assets/75227621-1200px.jpg" className="w-1/4 m-2"></img>
+                                <img src={pintailImg} className="w-1/4 m-2" />
                                 <span>
                                     A sleek, elegant duck known for its long neck and pointed tail.
                                 </span>
                                 <span>
-                                    They are strong and fast flyers. They often migrate, travelling long distances.
+                                    They are strong, fast flyers and highly migratory.
                                 </span>
                                 <span className="mt-2">
                                     <b>Fun fact:</b> Pintails are among the earliest ducks to migrate each year.
@@ -183,21 +198,22 @@ export default function Duckpedia() {
                                 <span className="font-lexend font-semibold">American Black Duck (Anas rubripes)</span>
                             </AccordionSummary>
                             <AccordionDetails className="font-lexend flex flex-col">
-                                <img src="src/assets/301259931-480px.jpg" className="w-1/4 m-2"></img>
+                                <img src={blackDuckImg} className="w-1/4 m-2" />
                                 <span>
                                     A close relative of the mallard, but darker and more secretive.
                                 </span>
                                 <span>
-                                    They are shy and wary compared to their close counterpart, the mallard.
+                                    They are shy and wary compared to mallards.
                                 </span>
                                 <span className="mt-2">
-                                    <b>Fun fact:</b> They were once extremely common but declined due to habitat loss and hybridisation.
+                                    <b>Fun fact:</b> Their population declined due to habitat loss and hybridisation.
                                 </span>
                             </AccordionDetails>
                         </Accordion>
+
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
