@@ -1,18 +1,20 @@
-# React + Vite
+# Duckiverse
+Welcome to Duckiverse, a place where you can learn more about ducks! Fetch a duck picture using [random duck API!](https://random-d.uk/) Or, maybe you fancy rating the duck of the day? Want a quick fun fact about ducks? Just get a new fact in a click of a button! 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Oh.. you're actually interested in ducks? Well, we have a page just for starters! Check out Duckipedia!! It contains basic information about ducks, their habitats, their habits, their diet and why they matter to us and the world! Get to know some common duck species on the way!!
 
-Currently, two official plugins are available:
+Want some cute duck pictures? The gallery has a bunch to satisfy your needs!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Feeling a bit silly? There's a duck-themed soundboard for you to try out, quack!
 
-## React Compiler
+# How I made this
+- React
+- Tailwind CSS
+- Ducks
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+# Hardships, difficulties, problems blah blah blah
+The Duck of the Day part came into my head right before I went to sleep after spending my first night working on the website. I was thinking of how I could get the picture to stay for 24 hours and not change. Tbh, I thought it was impossible without some big brain logic until I found out javascript has a localStorage option. Oh, the new things I learn everyday...
 
-Note: This will impact Vite dev & build performances.
+Anyways, I desperately need feathers and I just so happened to come across this cute duck image API on the internet and decided to create a website just about ducks! I might have just fallen in love with ducks making this...
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Check the website out :)](https://random-duck-website.vercel.app/)
